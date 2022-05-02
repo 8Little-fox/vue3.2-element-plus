@@ -1,0 +1,20 @@
+<script>
+ /**
+  * 1 通过一个变量来控制语言环境
+  * 2 所以语言环境下的数据源要预先定义好
+  * 3 通过一个方法来获取当前语言下的指定属性
+  * 4 该值即为国际化下展示值
+  */
+  const message = {
+   en: {
+    msg: 'hello world'
+   },
+   zh: {
+    msg: '你好全世界'
+   }
+  }
+  let locale = 'en'
+  function t(key) {
+   return message[locale][msg]
+  }
+</script>
